@@ -36,8 +36,33 @@
     float: left;
 }
 
+.app{
+    position: relative;
+}
+
+/* 设置app下的小三角 */
+li:hover>.app::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-top: none;
+    border-bottom-color: #ffffff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+li:hover> .app .qrcode{
+    display: block;
+}
 /* 设置下载app的下拉 */
 .app .qrcode{
+    display: none;
+    position: absolute;
+    left: -40px;
     width: 124px;
     height: 148px;
     line-height: 1;
