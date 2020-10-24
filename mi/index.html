@@ -16,7 +16,7 @@
     <!-- 顶部导航条外部容器 -->
     <div class="topbar-wrapper">
         <!-- 创建内部容器 -->
-        <div class="topbar">
+        <div class="topbar w clearfix">
             <!-- 左侧的导航 -->
             <ul class="service">
                 <li><a href="javascript:;">小米商城</a></li>
@@ -39,18 +39,26 @@
                 <li class="line">|</li>
                 <li><a href="javascript:;">协议规则</a></li>
                 <li class="line">|</li>
-                <li><a href="javascript:;">下载app</a></li>
+                <li>
+                    <a class="app" href="javascript:;">
+                        下载app
+                        <!-- 添加一个弹出层 -->
+                        <div class="qrcode">
+                            <img src="./img/download.png">
+                            <span>小米商城APP</span>
+                        </div>                        
+                    </a>
+                </li>
                 <li class="line">|</li>
                 <li><a href="javascript:;">Select Location</a></li>
-                <li class="line">|</li>
             </ul>
 
             <!-- 购物车 -->
             <ul class="shop-cart">
                 <li><a href="javascript:;">
-                    <i class="fas fa-shopping-cart"></i>
-                    购物车
-                </a></li>
+                        <i class="fas fa-shopping-cart"></i>
+                        购物车（0）
+                    </a></li>
             </ul>
 
             <!-- 用户登录注册 -->
@@ -60,9 +68,8 @@
                 <li><a href="javascript:;">注册</a></li>
                 <li class="line">|</li>
                 <li><a href="javascript:;">消息通知</a></li>
-                <li class="line">|</li>
             </ul>
-            
+
         </div>
 
     </div>
